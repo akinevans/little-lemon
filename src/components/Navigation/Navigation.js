@@ -35,7 +35,7 @@ export default function Navigation() {
     <>
       <nav className='nav'>
         <img className='nav-logo' src={logo} alt='a drawn lemon' />
-        <ul className={`ul ${showNavMenu ? "" : "hide"}`}>
+        <ul className='ul'>
           <li className='list-item'>
             <Link className='link' to='/'>
               Home
@@ -69,7 +69,7 @@ export default function Navigation() {
         </ul>
         <img
           src={displayMenuIcon()}
-          alt='hamburger menu icon'
+          alt='menu icon'
           className={`hamburger-img ${windowSize[0] <= 930 ? "" : "hide"}`}
           onClick={() => {
             setShowNavMenu(!showNavMenu);
@@ -77,7 +77,9 @@ export default function Navigation() {
         />
       </nav>
       {/* //& Nav Menu Modal Here */}
-      <NavMenu visible={showNavMenu ? "" : "hide-menu"} />
+      <NavMenu
+        visible={`${showNavMenu && windowSize[0] <= 930 ? "" : "hide-menu"}`}
+      />
     </>
   );
 }

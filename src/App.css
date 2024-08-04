@@ -1,3 +1,11 @@
+:root {
+  --primary-green: #495e57;
+  --primary-yellow: #f4ce14;
+  --secondary-peach: #ee9972;
+  --secondary-grey: #edefee;
+  --secondary-black: #333;
+}
+
 .App {
   text-align: center;
 }

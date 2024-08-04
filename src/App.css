@@ -1,9 +1,23 @@
 :root {
+  /* Colors */
   --primary-green: #495e57;
   --primary-yellow: #f4ce14;
   --secondary-peach: #ee9972;
   --secondary-grey: #edefee;
   --secondary-black: #333;
+
+  /* Fonts */
+  --markazi: Markazi;
+  --karla: Karla;
+
+  /* Font Sizes */
+  /* to set multi-values use format: font: italic small-caps bold 12px/30px Georgia, serif; */
+  --regular: 40pt;
+  --medium: 18pt;
+  --section-title: extra-bold uppercase 20pt Karla;
+  --card-title: bold 18pt Karla;
+  --paragraph: regular 16pt Karla;
+  --highlight: bold 16pt Karla;
 }
 
 .App {

@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --primary-green: #495e57;
+  --primary-yellow: #f4ce14;
+  --secondary-peach: #ee9972;
+  --secondary-grey: #edefee;
+  --secondary-black: #333;
+
+  /* Fonts */
+  --markazi: "Markazi";
+  --karla: "Karla";
+
+  /* Font Sizes */
+  /* to set multi-values use format: font: italic small-caps bold 12px/30px Georgia, serif; */
+  --regular: 40pt;
+  --medium: 18pt;
+  --section-title: normal normal 700 20px normal Karla, sans-serif;
+  --card-title: normal normal 600 18px normal Karla, sans-serif;
+  --paragraph: normal normal 400 16px normal Karla, sans-serif;
+  --highlight: normal normal 600 16px normal Karla, sans-serif;
+}

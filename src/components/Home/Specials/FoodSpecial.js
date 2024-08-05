@@ -1,0 +1,26 @@
+import React from "react";
+import delivery from "../../../assets/deliverypng.png";
+import "./FoodSpecial.css";
+
+export default function FoodSpecial(props) {
+  return (
+    <div className='food-specials-wrapper'>
+      <div className='top'>
+        <img className={props.imgClass} src={props.img} alt={props.alt} />
+      </div>
+      <div className='bottom'>
+        <div className='title-price'>
+          <h1 className='title'>{props.itemName}</h1>
+          <h1 className='price'>{props.price}</h1>
+        </div>
+        <div className='description-wrapper'>
+          <p className='description-text'>{props.description}</p>
+          <div className='order-section'>
+            <p>Order a delivery</p>
+            <img src={delivery} alt='delivery truck' />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

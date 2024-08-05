@@ -1,9 +1,13 @@
 import React from "react";
+import Hero from "../components/Home/Hero/Hero";
+import Specials from "../components/Home/Specials/Specials";
+
 import "./Home.css";
 export default function Home() {
   return (
     <div className='home-wrapper'>
-      <h1 className='title'>home page</h1>
+      <Hero />
+      <Specials />
     </div>
   );
 }

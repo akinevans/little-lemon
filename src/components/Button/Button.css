@@ -1,0 +1,21 @@
+.btn {
+  width: 200px;
+  height: 60px;
+  color: #000;
+  background-color: var(--primary-yellow);
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font: var(--card-title);
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.btn:hover {
+  opacity: 85%;
+  transition: 0.2s all ease;
+}
+
+.btn:active {
+  opacity: 60%;
+}

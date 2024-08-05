@@ -77,9 +77,9 @@ export default function Navigation() {
         />
       </nav>
       {/* //& Nav Menu Modal Here */}
-      <NavMenu
+      {/* <NavMenu
         visible={`${showNavMenu && windowSize[0] <= 930 ? "" : "hide-menu"}`}
-      />
+      /> */}
     </>
   );
 }

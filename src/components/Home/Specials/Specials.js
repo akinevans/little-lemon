@@ -11,6 +11,7 @@ export default function Specials() {
     <div className='specials-wrapper'>
       <div className='top-wrapper'>
         <h1>Specials!</h1>
+        {/* TODO: link to  menu page */}
         <Button title='Online Menu' />
       </div>
 
@@ -38,8 +39,8 @@ export default function Specials() {
         <FoodSpecial
           imgClass='food-item-img lemon'
           img={lemon}
-          alt='lemon'
-          itemName='lemon'
+          alt='lemon dessert'
+          itemName='Lemon Dessert'
           price='$5.00'
           description='This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.'
         />

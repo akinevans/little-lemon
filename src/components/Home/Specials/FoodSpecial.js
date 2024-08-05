@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import delivery from "../../../assets/deliverypng.png";
 import "./FoodSpecial.css";
 
@@ -16,7 +17,8 @@ export default function FoodSpecial(props) {
         <div className='description-wrapper'>
           <p className='description-text'>{props.description}</p>
           <div className='order-section'>
-            <p>Order a delivery</p>
+            {/* TODO:link to order online page */}
+            <Link to='/'>Order a delivery</Link>
             <img src={delivery} alt='delivery truck' />
           </div>
         </div>

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Navigation from "./components/Navigation/Navigation";
+import Footer from "./components/Footer/Footer";
 import { HashRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
@@ -12,6 +13,7 @@ root.render(
     <HashRouter>
       <Navigation />
       <App />
+      <Footer />
     </HashRouter>
   </React.StrictMode>
 );

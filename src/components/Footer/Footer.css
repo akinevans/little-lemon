@@ -1,0 +1,66 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px 0;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--primary-green);
+  color: #fff;
+
+  h1 {
+    margin-top: 0;
+    font-family: var(--karla);
+    font-size: 28px;
+  }
+
+  .little-lemon-logo {
+    width: 10%;
+    max-width: 200px;
+    min-width: 120px;
+  }
+
+  .sitemap {
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        list-style: none;
+
+        a {
+          font-family: var(--karla);
+          font-size: 18px;
+          color: #fff;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .contact {
+    p {
+      margin: 0 0 10px 0;
+    }
+    .email {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .social-media {
+    img {
+      margin-right: 10px;
+      width: 35px;
+      filter: invert(1);
+    }
+  }
+} /* *end footer*/

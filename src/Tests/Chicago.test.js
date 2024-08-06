@@ -3,14 +3,14 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import Chicago from "./Chicago";
+import Chicago from "../components/Home/Chicago/Chicago";
 
 describe("Chicago component", () => {
   it("renders the component correctly", () => {
     const { getByText, getByAltText } = render(<Chicago />);
     const screen = Screen;
     // Check for the presence of main titles
-    expect(screen.getByText("Little Lemon")).toBeInTheDocument();
+    expect(screen.getByText("Welcome to Little Lemon")).toBeInTheDocument();
     expect(screen("Chicago")).toBeInTheDocument();
 
     // Check for the presence of the article text

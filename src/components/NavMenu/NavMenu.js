@@ -12,27 +12,27 @@ export default function NavMenu(props) {
           </Link>
         </li>
         <li className='menu-list-item'>
-          <Link className='menu-link' to='About'>
+          <Link className='menu-link' to='about'>
             About
           </Link>
         </li>
         <li className='menu-list-item'>
-          <Link className='menu-link' to='Menu'>
+          <Link className='menu-link' to='menu'>
             Menu
           </Link>
         </li>
         <li className='menu-list-item'>
-          <Link className='menu-link' to='Reservations'>
+          <Link className='menu-link' to='reservations'>
             Reservations
           </Link>
         </li>
         <li className='menu-list-item'>
-          <Link className='menu-link' to='Order Online'>
+          <Link className='menu-link' to='order-online'>
             Order Online
           </Link>
         </li>
         <li className='menu-list-item'>
-          <Link className='menu-link' to='Login'>
+          <Link className='menu-link' to='login'>
             Login
           </Link>
         </li>

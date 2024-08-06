@@ -47,22 +47,22 @@ export default function Navigation() {
             </Link>
           </li>
           <li className='list-item'>
-            <Link className='link' to='About'>
+            <Link className='link' to='about'>
               About
             </Link>
           </li>
           <li className='list-item'>
-            <Link className='link' to='Menu'>
+            <Link className='link' to='menu'>
               Menu
             </Link>
           </li>
           <li className='list-item'>
-            <Link className='link' to='Reservations'>
+            <Link className='link' to='reservations'>
               Reservations
             </Link>
           </li>
           <li className='list-item'>
-            <Link className='link' to='Order Online'>
+            <Link className='link' to='order-online'>
               Order Online
             </Link>
           </li>

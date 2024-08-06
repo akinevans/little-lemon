@@ -1,0 +1,22 @@
+.confirmation-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 100px 0;
+  width: 100%;
+  height: fit-content;
+  /* border: 2px solid red; */
+
+  h1,
+  h2 {
+    margin: 15px;
+    color: var(--primary-green);
+    font-family: var(--karla);
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+}

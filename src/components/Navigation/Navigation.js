@@ -11,6 +11,10 @@ import exit from "../../assets/exit.png";
 export default function Navigation() {
   const [showNavMenu, setShowNavMenu] = useState(false);
 
+  const shouldNavBeVisible = () => {
+    return showNavMenu && windowSize[0] <= 930 ? "show" : "";
+  };
+
   //Window width for showing / hiding hamburger menu
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
@@ -18,7 +22,7 @@ export default function Navigation() {
   ]);
 
   const displayMenuIcon = () => {
-    return showNavMenu ? hamburger : exit;
+    return showNavMenu ? exit : hamburger;
   };
 
   useEffect(() => {
@@ -27,6 +31,7 @@ export default function Navigation() {
     };
 
     window.addEventListener("resize", handleWindowResize);
+
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
@@ -77,9 +82,10 @@ export default function Navigation() {
         />
       </nav>
       {/* //& Nav Menu Modal Here */}
-      {/* <NavMenu
-        visible={`${showNavMenu && windowSize[0] <= 930 ? "" : "hide-menu"}`}
-      /> */}
+      <NavMenu
+        // return 'show' or ''
+        visible={shouldNavBeVisible()}
+      />
     </>
   );
 }

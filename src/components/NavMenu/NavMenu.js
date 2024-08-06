@@ -4,7 +4,7 @@ import "./NavMenu.css";
 
 export default function NavMenu(props) {
   return (
-    <div className={`menu-nav ${props.visible ? "" : "hide-menu"}`}>
+    <div className={`menu-nav ${props.visible === "show" ? "" : "hide-menu"}`}>
       <ul className='menu-ul'>
         <li className='menu-list-item'>
           <Link className='menu-link' to='/'>

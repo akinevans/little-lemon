@@ -1,5 +1,6 @@
 .specials-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -27,8 +28,9 @@
 
 .bottom-wrapper {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   max-width: 980px;
 }

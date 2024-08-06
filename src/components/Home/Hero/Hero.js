@@ -1,9 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import Button from "../../Button/Button";
 import plate_of_food from "../../../assets/restauranfood.jpg";
 import "./Hero.css";
 
 export default function Hero() {
+  const navigate = useNavigate();
+
+  const navigateToReservation = () => {
+    navigate("/reservations");
+  };
   return (
     <div className='hero-wrapper'>
       {/* //^ left side */}
@@ -20,7 +27,7 @@ export default function Hero() {
           title='Reserve a Table'
           className=''
           onClick={() => {
-            console.log("reserve a table");
+            navigateToReservation();
           }}
         />
       </div>

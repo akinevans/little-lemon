@@ -1,8 +1,9 @@
-.footer {
+.footer,
+.footer-inner-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
   padding: 30px 0;
   width: 100%;
@@ -10,57 +11,67 @@
   background-color: var(--primary-green);
   color: #fff;
 
-  h1 {
-    margin-top: 0;
-    font-family: var(--karla);
-    font-size: 28px;
-  }
+  .footer-inner-wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
 
-  .little-lemon-logo {
-    width: 10%;
-    max-width: 200px;
-    min-width: 120px;
-  }
+    h1 {
+      margin-top: 0;
+      font-family: var(--karla);
+      font-size: 28px;
+    }
 
-  .sitemap {
-    ul {
-      margin: 0;
-      padding: 0;
+    .little-lemon-logo {
+      width: 10%;
+      max-width: 200px;
+      min-width: 120px;
+    }
 
-      li {
-        margin-bottom: 8px;
+    .sitemap {
+      width: fit-content;
+      ul {
+        margin: 0;
+        padding: 0;
 
-        list-style: none;
+        li {
+          margin-bottom: 8px;
 
-        a {
-          font-family: var(--karla);
-          font-size: 18px;
-          color: #fff;
-          text-decoration: none;
-        }
-        a:hover {
-          color: #fff;
-          text-decoration: underline;
+          list-style: none;
+
+          a {
+            font-family: var(--karla);
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+          }
+          a:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
         }
       }
     }
-  }
 
-  .contact {
-    p {
-      margin: 0 0 10px 0;
-    }
-    .email {
-      color: #fff;
-      text-decoration: underline;
-    }
-  }
+    .contact {
+      width: fit-content;
 
-  .social-media {
-    img {
-      margin-right: 10px;
-      width: 35px;
-      filter: invert(1);
+      p {
+        margin: 0 0 10px 0;
+      }
+      .email {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+
+    .social-media {
+      width: fit-content;
+
+      img {
+        margin-right: 10px;
+        width: 35px;
+        filter: invert(1);
+      }
     }
   }
 } /* *end footer*/

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../Button/Button";
 import FoodSpecial from "./FoodSpecial";
 import "./Specials.css";
@@ -7,12 +8,21 @@ import bruschetta from "../../../assets/bruchetta.svg";
 import lemon from "../../../assets/lemon dessert.jpg";
 
 export default function Specials() {
+  const navigate = useNavigate();
+
+  const navigateToMenu = () => {
+    navigate("/menu");
+  };
   return (
     <div className='specials-wrapper'>
       <div className='top-wrapper'>
         <h1>Specials!</h1>
-        {/* TODO: link to  menu page */}
-        <Button title='Online Menu' />
+        <Button
+          onClick={() => {
+            navigateToMenu();
+          }}
+          title='Online Menu'
+        />
       </div>
 
       <div className='bottom-wrapper'>

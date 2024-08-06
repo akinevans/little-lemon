@@ -17,8 +17,9 @@ export default function FoodSpecial(props) {
         <div className='description-wrapper'>
           <p className='description-text'>{props.description}</p>
           <div className='order-section'>
-            {/* TODO:link to order online page */}
-            <Link to='/'>Order a delivery</Link>
+            <Link className='link' to='/order-online'>
+              Order a delivery
+            </Link>
             <img src={delivery} alt='delivery truck' />
           </div>
         </div>

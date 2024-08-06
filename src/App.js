@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Menu from "./pages/Menu";
-import Reservations from "./components/Reservations/Reservations";
+import Reservations from "./pages/Reservations";
 import OrderOnline from "./pages/OrderOnline";
 import Login from "./pages/Login";
 import ConfirmationPage from "./pages/ConfirmationPage";

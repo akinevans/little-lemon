@@ -5,7 +5,7 @@ import chefs2 from "../../../assets/Mario and Adrian b.jpg";
 
 export default function Chicago() {
   return (
-    <div className='chicago-wrapper'>
+    <article className='chicago-wrapper'>
       <div className='left'>
         <h1 className='title'>Little Lemon</h1>
         <h2 className='sub-title'>Chicago</h2>
@@ -33,6 +33,6 @@ export default function Chicago() {
           alt='two chefs laughing in the kitchen'
         />
       </div>
-    </div>
+    </article>
   );
 }

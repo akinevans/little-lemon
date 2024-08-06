@@ -5,11 +5,11 @@ import "./FoodSpecial.css";
 
 export default function FoodSpecial(props) {
   return (
-    <div className='food-specials-wrapper'>
+    <section className='food-specials-wrapper'>
       <div className='top'>
         <img className={props.imgClass} src={props.img} alt={props.alt} />
       </div>
-      <div className='bottom'>
+      <article className='bottom'>
         <div className='title-price'>
           <h1 className='title'>{props.itemName}</h1>
           <h1 className='price'>{props.price}</h1>
@@ -23,7 +23,7 @@ export default function FoodSpecial(props) {
             <img src={delivery} alt='delivery truck' />
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }

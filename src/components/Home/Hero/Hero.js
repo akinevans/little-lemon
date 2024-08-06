@@ -12,17 +12,17 @@ export default function Hero() {
     navigate("/reservations");
   };
   return (
-    <div className='hero-wrapper'>
+    <section className='hero-wrapper'>
       {/* //^ left side */}
       <div className='hero-left'>
-        <div className='text-wrapper'>
+        <article className='text-wrapper'>
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
           <p>
             We are family owned Mediterranean restaurant, focused on traditional
             recipes served with a modern twist.
           </p>
-        </div>
+        </article>
         <Button
           title='Reserve a Table'
           className=''
@@ -36,6 +36,6 @@ export default function Hero() {
       <div className='hero-right'>
         <img src={plate_of_food} alt='plate of food' className='hero-img' />
       </div>
-    </div>
+    </section>
   );
 }

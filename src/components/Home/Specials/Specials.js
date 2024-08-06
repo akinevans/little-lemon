@@ -14,7 +14,7 @@ export default function Specials() {
     navigate("/menu");
   };
   return (
-    <div className='specials-wrapper'>
+    <section className='specials-wrapper'>
       <div className='top-wrapper'>
         <h1>Specials!</h1>
         <Button
@@ -55,6 +55,6 @@ export default function Specials() {
           description='This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.'
         />
       </div>
-    </div>
+    </section>
   );
 }
